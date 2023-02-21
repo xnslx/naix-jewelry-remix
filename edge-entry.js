@@ -1,4 +1,4 @@
-import handleRequest from './src/App.server';
+import handleRequest from './app/entry.client';
 import indexTemplate from './dist/worker/index';
 
 // ReadableStream is bugged in Vercel Edge, overwrite with polyfill
