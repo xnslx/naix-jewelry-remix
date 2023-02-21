@@ -1,5 +1,5 @@
 import handleRequest from './src/App.server';
-import indexTemplate from './dist/client/index.html?raw';
+import indexTemplate from './dist/client/build/entry.client-UGNAKISJ';
 
 // ReadableStream is bugged in Vercel Edge, overwrite with polyfill
 import {ReadableStream} from 'web-streams-polyfill/ponyfill';
