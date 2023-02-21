@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "build": "npm run build:css && shopify hydrogen build",
+    "build": "npm run build:css && shopify hydrogen build server.ts",
     "build:css": "postcss styles --base styles --dir app/styles --env production",
     "dev": "npm run build:css && concurrently -g --kill-others-on-fail -r npm:dev:css \"shopify hydrogen dev\"",
     "dev:css": "postcss styles --base styles --dir app/styles -w",
@@ -35,6 +35,7 @@
     "typographic-base": "^1.0.4"
   },
   "devDependencies": {
+    "@netlify/hydrogen-platform": "^1.1.4",
     "@remix-run/dev": "1.12.0",
     "@remix-run/eslint-config": "1.12.0",
     "@shopify/eslint-plugin": "^42.0.1",
