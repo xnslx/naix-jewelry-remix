@@ -10,9 +10,7 @@
     "preview": "npm run build && shopify hydrogen preview",
     "lint": "eslint --no-error-on-unmatched-pattern --ext .js,.ts,.jsx,.tsx .",
     "format": "prettier --write --ignore-unknown .",
-    "typecheck": "tsc --noEmit",
-    "prepare:output": "rm -rf .vercel/output && cp -r output-template .vercel/output && cp -r dist/client/* .vercel/output/static && rm .vercel/output/static/index.html && cp dist/worker/index.js .vercel/output/functions/hydrogen.func/",
-    "deploy": "vercel deploy --prebuilt"
+    "typecheck": "tsc --noEmit"
   },
   "prettier": "@shopify/prettier-config",
   "dependencies": {
